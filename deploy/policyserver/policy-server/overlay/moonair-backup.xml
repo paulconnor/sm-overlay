@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by CA SiteMinder Version 12.8.0700.3057
+     by os:nobody
+     at 06:44:33 on 2023-08-21 -->
+<XPS>
+    <XPSVersion>1</XPSVersion>
+    <HostInformation>smmaint-siteminder-maintenance-job-x5ejc-qk4rv</HostInformation>
+    <XPSAdmin>os:nobody</XPSAdmin>
+    <PolicyData IsDumpExport="false">
+        <References>
+            <ReferenceObject ReferenceId="Ref00005" ObjectClass="CA.SM::AuthScheme">
+            <Xid>CA.SM::AuthScheme@0d-4afc0e42-ae25-11d1-9cdd-006008aac24b</Xid>
+            <Attribute Name="CA.SM::AuthScheme.Library" Type="Identity">
+                <StringValue>smauthdir</StringValue>
+            </Attribute>
+            <Attribute Name="CA.SM::AuthScheme.Name" Type="Identity">
+                <StringValue>Basic</StringValue>
+            </Attribute>
+            <Attribute Name="CA.SM::AuthScheme.Desc" Type="Comment">
+                <StringValue>Directory username/password</StringValue>
+            </Attribute>
+            </ReferenceObject>
+            <ReferenceObject ReferenceId="Ref00004" ObjectClass="CA.SM::AuthScheme">
+            <Xid>CA.SM::AuthScheme@0d-000948ae-7d23-14dd-ac9c-01120a48c57f</Xid>
+            <Attribute Name="CA.SM::AuthScheme.Library" Type="Identity">
+                <StringValue>smauthoidcrp</StringValue>
+            </Attribute>
+            <Attribute Name="CA.SM::AuthScheme.Name" Type="Identity">
+                <StringValue>VIP_AuthHub_Login</StringValue>
+            </Attribute>
+            </ReferenceObject>
+            <ReferenceObject ReferenceId="Ref00006" ObjectClass="CA.SM::UserDirectory">
+            <Xid>CA.SM::UserDirectory@0e-000d25ce-38ca-1214-af06-0003ac100000</Xid>
+            <Attribute Name="CA.SM::UserDirectory.Name" Type="Identity">
+                <StringValue>Auth-Hub-2.1.2</StringValue>
+            </Attribute>
+            <Attribute Name="CA.SM::UserDirectory.Server" Type="Comment">
+                <StringValue>34.116.81.199</StringValue>
+            </Attribute>
+            <Attribute Name="CA.SM::UserDirectory.Namespace" Type="Comment">
+                <StringValue>LDAP:</StringValue>
+            </Attribute>
+            </ReferenceObject>
+            <ReferenceObject ReferenceId="Ref00003" ObjectClass="CA.SM::AgentTypeAttr">
+            <Xid>CA.SM::AgentTypeAttr@11-8d78bb90-ae15-11d1-9cdd-006008aac24b</Xid>
+            <Attribute Name="CA.SM::AgentTypeAttr.Name" Type="Identity">
+                <StringValue>WebAgent-HTTP-Header-Variable</StringValue>
+            </Attribute>
+            </ReferenceObject>
+            <ReferenceObject ReferenceId="Ref00002" ObjectClass="CA.SM::AgentType">
+            <Xid>CA.SM::AgentType@10-8d78bb96-ae15-11d1-9cdd-006008aac24b</Xid>
+            <Attribute Name="CA.SM::AgentType.Name" Type="Identity">
+                <StringValue>Web Agent</StringValue>
+            </Attribute>
+            <Attribute Name="CA.SM::AgentType.Desc" Type="Comment">
+                <StringValue>SiteMinder Web Agent</StringValue>
+            </Attribute>
+            </ReferenceObject>
+            <ReferenceObject ReferenceId="Ref00001" ObjectClass="CA.SM::Agent">
+            <Xid>CA.SM::Agent@01-000a7d2e-4b22-1733-84ac-0003ac12d07d</Xid>
+            <Attribute Name="CA.SM::Agent.Name" Type="Identity">
+                <StringValue>sps</StringValue>
+            </Attribute>
+            </ReferenceObject>
+        </References>
+        <Object Class="CA.SM::Domain" Xid="CA.SM::Domain@03-000b9cc7-f829-14e2-834e-03110a480000" CreatedDateTime="2023-08-21T05:44:31" UpdatedBy="siteminder" UpdateMethod="GUI" ExportType="Replace">
+            <Property Name="CA.SM::Domain.Mode">
+                <NumberValue>2</NumberValue>
+            </Property>
+            <Property Name="CA.SM::Domain.IsDLP">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.SM::Domain.IsAffiliate">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.SM::Domain.UserDirectoriesLink">
+                <LinkValue>
+                    <XREF>Ref00006</XREF>
+                </LinkValue>
+            </Property>
+            <Property Name="CA.SM::Domain.Name">
+                <StringValue>Moonair</StringValue>
+            </Property>
+            <Object Class="CA.SM::Response" Xid="CA.SM::Response@07-000147fd-fd11-14e2-834e-03110a480000" CreatedDateTime="2023-08-21T06:00:50" UpdatedBy="siteminder" UpdateMethod="GUI">
+                <Property Name="CA.SM::Response.AccessChallenge">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Response.AccessReject">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Response.AccessAccept">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Response.AgentTypeLink">
+                    <LinkValue>
+                        <XREF>Ref00002</XREF>
+                    </LinkValue>
+                </Property>
+                <Property Name="CA.SM::Response.Name">
+                    <StringValue>User_Info</StringValue>
+                </Property>
+                <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                    <NumberValue>0</NumberValue>
+                </Property>
+                <Object Class="CA.SM::ResponseAttr" Xid="CA.SM::ResponseAttr@08-0006b86c-fd36-14e2-834e-03110a480000" CreatedDateTime="2023-08-21T06:00:50" UpdatedBy="siteminder" UpdateMethod="GUI">
+                    <Property Name="CA.SM::ResponseAttr.TTL">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Value">
+                        <StringValue>EmailAddress=&lt;%userattr=&quot;mail&quot; %&gt;</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Flags">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.AgentTypeAttrLink">
+                        <LinkValue>
+                            <XREF>Ref00003</XREF>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                </Object><!-- Xid="CA.SM::ResponseAttr@08-0006b86c-fd36-14e2-834e-03110a480000" -->
+                <Object Class="CA.SM::ResponseAttr" Xid="CA.SM::ResponseAttr@08-00069129-fd1b-14e2-834e-03110a480000" CreatedDateTime="2023-08-21T06:00:50" UpdatedBy="siteminder" UpdateMethod="GUI">
+                    <Property Name="CA.SM::ResponseAttr.TTL">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Value">
+                        <StringValue>Phone Number=&lt;%userattr=&quot;telephoneNumber&quot; %&gt;</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Flags">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.AgentTypeAttrLink">
+                        <LinkValue>
+                            <XREF>Ref00003</XREF>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                </Object><!-- Xid="CA.SM::ResponseAttr@08-00069129-fd1b-14e2-834e-03110a480000" -->
+                <Object Class="CA.SM::ResponseAttr" Xid="CA.SM::ResponseAttr@08-00088746-fd5a-14e2-834e-03110a480000" CreatedDateTime="2023-08-21T06:00:50" UpdatedBy="siteminder" UpdateMethod="GUI">
+                    <Property Name="CA.SM::ResponseAttr.TTL">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Value">
+                        <StringValue>First Name=givenName</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Flags">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.AgentTypeAttrLink">
+                        <LinkValue>
+                            <XREF>Ref00003</XREF>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                </Object><!-- Xid="CA.SM::ResponseAttr@08-00088746-fd5a-14e2-834e-03110a480000" -->
+                <Object Class="CA.SM::ResponseAttr" Xid="CA.SM::ResponseAttr@08-000b5ae8-fd49-14e2-834e-03110a480000" CreatedDateTime="2023-08-21T06:00:50" UpdatedBy="siteminder" UpdateMethod="GUI">
+                    <Property Name="CA.SM::ResponseAttr.TTL">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Value">
+                        <StringValue>Last Name=&lt;%userattr=&quot;sn&quot; %&gt;</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Flags">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.AgentTypeAttrLink">
+                        <LinkValue>
+                            <XREF>Ref00003</XREF>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                </Object><!-- Xid="CA.SM::ResponseAttr@08-000b5ae8-fd49-14e2-834e-03110a480000" -->
+            </Object><!-- Xid="CA.SM::Response@07-000147fd-fd11-14e2-834e-03110a480000" -->
+            <Object Class="CA.SM::Realm" Xid="CA.SM::Realm@06-00011687-f84c-14e2-834e-03110a480000" CreatedDateTime="2023-08-21T05:44:31" UpdatedBy="siteminder" UpdateMethod="GUI">
+                <Property Name="CA.SM::Realm.MinUserConfidenceLevel">
+                    <NumberValue>0</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.SessionType">
+                    <NumberValue>0</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.SyncAudit">
+                    <BooleanValue>false</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.IdleTimeout">
+                    <NumberValue>3600</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ProtectAll">
+                    <BooleanValue>false</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.SessionDrift">
+                    <NumberValue>-1</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.AuthSchemeLink">
+                    <LinkValue>
+                        <XREF>Ref00005</XREF>
+                    </LinkValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ProcessAzEvents">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ProcessAuthEvents">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.AgentLink">
+                    <LinkValue>
+                        <XREF>Ref00001</XREF>
+                    </LinkValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ResourceFilter">
+                    <StringValue>/moonair</StringValue>
+                </Property>
+                <Property Name="CA.SM::Realm.MaxTimeout">
+                    <NumberValue>7200</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.Name">
+                    <StringValue>App-1</StringValue>
+                </Property>
+                <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                    <NumberValue>0</NumberValue>
+                </Property>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-00036676-f874-14e2-834e-03110a480000" CreatedDateTime="2023-08-21T05:44:31" UpdatedBy="siteminder" UpdateMethod="GUI">
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>/index.html</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>app1</StringValue>
+                    </Property>
+                    <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                </Object><!-- Xid="CA.SM::Rule@0b-00036676-f874-14e2-834e-03110a480000" -->
+            </Object><!-- Xid="CA.SM::Realm@06-00011687-f84c-14e2-834e-03110a480000" -->
+            <Object Class="CA.SM::Realm" Xid="CA.SM::Realm@06-000b7794-f8c9-14e2-834e-03110a480000" CreatedDateTime="2023-08-21T05:44:31" ModifiedDateTime="2023-08-21T06:12:31" UpdatedBy="siteminder" UpdateMethod="GUI">
+                <Property Name="CA.SM::Realm.MinUserConfidenceLevel">
+                    <NumberValue>0</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.SessionType">
+                    <NumberValue>0</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.SyncAudit">
+                    <BooleanValue>false</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.IdleTimeout">
+                    <NumberValue>3600</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ProtectAll">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.SessionDrift">
+                    <NumberValue>-1</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.AuthSchemeLink">
+                    <LinkValue>
+                        <XREF>Ref00004</XREF>
+                    </LinkValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ProcessAzEvents">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ProcessAuthEvents">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.AgentLink">
+                    <LinkValue>
+                        <XREF>Ref00001</XREF>
+                    </LinkValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ResourceFilter">
+                    <StringValue>/moonair/jsps/headers</StringValue>
+                </Property>
+                <Property Name="CA.SM::Realm.MaxTimeout">
+                    <NumberValue>7200</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.Name">
+                    <StringValue>App-3</StringValue>
+                </Property>
+                <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                    <NumberValue>0</NumberValue>
+                </Property>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-00032fc8-f9d0-14e2-834e-03110a480000" CreatedDateTime="2023-08-21T05:45:51" ModifiedDateTime="2023-08-21T05:46:29" UpdatedBy="siteminder" UpdateMethod="GUI">
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>Moon Air Rule</StringValue>
+                    </Property>
+                    <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                </Object><!-- Xid="CA.SM::Rule@0b-00032fc8-f9d0-14e2-834e-03110a480000" -->
+            </Object><!-- Xid="CA.SM::Realm@06-000b7794-f8c9-14e2-834e-03110a480000" -->
+            <Object Class="CA.SM::Policy" Xid="CA.SM::Policy@04-0001f6e1-fce2-14e2-834e-03110a480000" CreatedDateTime="2023-08-21T06:00:50" UpdatedBy="siteminder" UpdateMethod="GUI">
+                <Property Name="CA.SM::Policy.ValidateIdDifferentUser">
+                    <BooleanValue>false</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Policy.IsEnabled">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Policy.AllowAccess">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Policy.TimeRestriction">
+                    <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                </Property>
+                <Property Name="CA.SM::Policy.ValidateIdentity">
+                    <BooleanValue>false</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Policy.Name">
+                    <StringValue>Moon Air</StringValue>
+                </Property>
+                <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                    <NumberValue>0</NumberValue>
+                </Property>
+                <Object Class="CA.SM::UserPolicy" Xid="CA.SM::UserPolicy@0f-00077b10-fcf3-14e2-834e-03110a480000" CreatedDateTime="2023-08-21T06:00:50" UpdatedBy="siteminder" UpdateMethod="GUI">
+                    <Property Name="CA.SM::UserPolicy.UserDirectoryLink">
+                        <LinkValue>
+                            <XREF>Ref00006</XREF>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::UserPolicy.PolicyFlags">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::UserPolicy.PolicyResolution">
+                        <NumberValue>7</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::UserPolicy.FilterClass">
+                        <StringValue>All</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::UserPolicy.FilterPath">
+                        <StringValue>All</StringValue>
+                    </Property>
+                </Object><!-- Xid="CA.SM::UserPolicy@0f-00077b10-fcf3-14e2-834e-03110a480000" -->
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-000d328a-fd05-14e2-834e-03110a480000" CreatedDateTime="2023-08-21T06:00:50" UpdatedBy="siteminder" UpdateMethod="GUI">
+                    <Property Name="CA.SM::PolicyLink.ResponseLink">
+                        <LinkValue>
+                            <XID>CA.SM::Response@07-000147fd-fd11-14e2-834e-03110a480000</XID>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-00032fc8-f9d0-14e2-834e-03110a480000</XID>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                </Object><!-- Xid="CA.SM::PolicyLink@05-000d328a-fd05-14e2-834e-03110a480000" -->
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-0003ba61-fcfc-14e2-834e-03110a480000" CreatedDateTime="2023-08-21T06:00:50" UpdatedBy="siteminder" UpdateMethod="GUI">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-00036676-f874-14e2-834e-03110a480000</XID>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                </Object><!-- Xid="CA.SM::PolicyLink@05-0003ba61-fcfc-14e2-834e-03110a480000" -->
+            </Object><!-- Xid="CA.SM::Policy@04-0001f6e1-fce2-14e2-834e-03110a480000" -->
+        </Object><!-- Xid="CA.SM::Domain@03-000b9cc7-f829-14e2-834e-03110a480000" -->
+    </PolicyData>
+</XPS>
+<!-- 06:44:33 2023-08-21 -->
