@@ -1,5 +1,5 @@
 #!/bin/bash
-# * 20-moonair.sh -- add moonair Context
+# * 12-moonair.sh -- add moonair Context
 sed -i '/\/Contexts/i \
 		<Context name="moonair">\
 			docBase="moonair"\
