@@ -14221,7 +14221,7 @@ AENEKPyW7mMm6IocPNcmP2CcCq2NE1fnj7kUCM7WCrp4n/5QCF6zbNe6Nv+s
                     <ParameterName Name="ObjStoreNamespace">LDAP:</ParameterName>
                     <ParameterName Name="LdapSessionServerEnabled">1</ParameterName>
                     <ParameterName Name="LdapSessionServer">cadir-service.cadir.svc.cluster.local:16389</ParameterName>
-                    <ParameterName Name="LdapSessionAdminPassword">{RC2}G216LGEhWwy6Ej6hynUJlvwBC/hwTJ2m</ParameterName>
+                    <ParameterName Name="LdapSessionAdminPassword"></ParameterName>
                     <ParameterName Name="LogRolloverSize">0</ParameterName>
                     <ParameterName Name="LdapObjUseSSL">0</ParameterName>
                     <ParameterName Name="LdapSessionRootDn">ou=sessionstore,o=SSO</ParameterName>
@@ -14329,7 +14329,7 @@ AENEKPyW7mMm6IocPNcmP2CcCq2NE1fnj7kUCM7WCrp4n/5QCF6zbNe6Nv+s
                     <ParameterName Name="DbTokenAdminPassword"/>
                     <ParameterName Name="DbObjMaxConnections">25</ParameterName>
                     <ParameterName Name="DbKeyDataSource">SiteMinder Keys Data Source</ParameterName>
-                    <ParameterName Name="LdapObjAdminPassword">{RC2}S6LWdgTne2I11kY3sVyqyWCYsRL/b8cB</ParameterName>
+                    <ParameterName Name="LdapObjAdminPassword"></ParameterName>
                     <ParameterName Name="ThreadPoolSize">8</ParameterName>
                     <ParameterName Name="AccTcpPort"/>
                     <ParameterName Name="DbKeyUseDefault">1</ParameterName>
